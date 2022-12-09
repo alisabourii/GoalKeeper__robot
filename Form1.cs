@@ -67,7 +67,7 @@ namespace Akili_kale
             sira++;
             textBox1.Clear();
 
-            //       3.ListBoxda değer yazmka
+            //       3.ListBoxda değer yazmak
             listBox3.Items.Clear();
             score.Add(adi, int.Parse(puan));
             var sortedDict = from entry in score orderby entry.Value ascending select entry;
