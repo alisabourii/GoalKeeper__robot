@@ -15,7 +15,7 @@ namespace Akili_kale
 {
     public partial class Form1 : Form
     {
-        string adi = "";
+        string playerName = "";
 
         SoundPlayer son = new SoundPlayer(@"H:\C#\Akili_kale_form\sesler\sonuc.wav");
         
@@ -53,7 +53,7 @@ namespace Akili_kale
 
         private void button2_Click(object sender, EventArgs e)
         {
-            adi = textBox1.Text;
+            playerName = textBox1.Text;
         }
 
         byte sira=1;
@@ -62,14 +62,14 @@ namespace Akili_kale
         private void button3_Click(object sender, EventArgs e)
         {
             son.Play();
-            listBox1.Items.Add(sira+"."+adi+" : ");
+            listBox1.Items.Add(sira+"."+playerName+" : ");
             listBox2.Items.Add(puan);
             sira++;
             textBox1.Clear();
 
             //       3.ListBoxda değer yazmak
             listBox3.Items.Clear();
-            score.Add(adi, int.Parse(puan));
+            score.Add(playerName, int.Parse(puan));
             var sortedDict = from entry in score orderby entry.Value ascending select entry;
             var sonuc = sortedDict.Reverse();
 
