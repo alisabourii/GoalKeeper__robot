@@ -56,15 +56,15 @@ namespace Akili_kale
             playerName = textBox1.Text;
         }
 
-        byte sira=1;
+        byte index=1;
         
         Dictionary<string, int> score = new Dictionary<string, int>();
         private void button3_Click(object sender, EventArgs e)
         {
             son.Play();
-            listBox1.Items.Add(sira+"."+playerName+" : ");
+            listBox1.Items.Add(index+"."+playerName+" : ");
             listBox2.Items.Add(puan);
-            sira++;
+            index++;
             textBox1.Clear();
 
             //       3.ListBoxda değer yazmak
