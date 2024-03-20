@@ -17,7 +17,7 @@ namespace Akili_kale
     {
         string playerName = "";
 
-        SoundPlayer son = new SoundPlayer(@"H:\C#\Akili_kale_form\sesler\sonuc.wav");
+        SoundPlayer sound = new SoundPlayer(@"H:\C#\Akili_kale_form\sesler\sonuc.wav");
         
         private string puan;
         
